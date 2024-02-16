@@ -1,0 +1,49 @@
+#artistSection {
+  border: 2px solid #e3b23c;
+  padding: 1rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.hThree {
+  font-size: 1.5rem;
+  color: #e3b23c;
+  grid-area: 1 / 1 / -1 / -1;
+}
+.topContainer {
+  grid-row: 1;
+  grid-column: 1 /-1;
+  & h2 {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid #e3b23c;
+  }
+}
+.threeD,
+.illustrator {
+  background-color: #44344f;
+  padding: 1rem;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90px;
+  gap: 0 1rem;
+}
+
+.threeD {
+  grid-column: 2;
+}
+.illustrator {
+  grid-column: 1;
+}
+.bottomContainer {
+  grid-row: 3;
+  grid-column: 1/-1;
+}
+
+.illustratorSchedule {
+  display: flex;
+  justify-content: center;
+}

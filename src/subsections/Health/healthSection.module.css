@@ -1,0 +1,97 @@
+#healthSection {
+  border: 2px solid #978897;
+  padding: 1rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr;
+}
+.hThree {
+  font-size: 1.5rem;
+  color: #e3b23c;
+}
+.topContainer {
+  grid-row: 1;
+  & h2 {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid #e3b23c;
+  }
+}
+
+.health {
+  background-color: #44344f;
+  padding: 1rem;
+  grid-row: 2;
+  display: grid;
+  & h3 {
+    grid-area: 1 / 1 / -1 / -1;
+  }
+}
+
+.fit {
+  background-color: #44344f;
+  padding: 1rem;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  & h3 {
+    grid-area: 1 / 1 / -1 / -1;
+  }
+}
+
+.healthSchedule {
+  display: flex;
+}
+.leftContainer {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  & h2,
+  h3,
+  p {
+    color: #44344f;
+  }
+}
+
+.breakfestCard,
+.lunchCard,
+.dinnerCard {
+  min-width: 350px;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  opacity: 0;
+  animation: 0.5s forwards slideFadeLeft ease-out;
+  transform: translateX(-50px);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+.breakfestCard {
+  background-color: #e3b23c;
+
+  animation-delay: 0.4s;
+}
+.lunchCard {
+  background-color: #f0c45f;
+  animation-delay: 0.3s;
+}
+.dinnerCard {
+  background-color: #78558d;
+  animation-delay: 0.2;
+}
+
+@keyframes slideFadeLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.textContainer {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 10px;
+  align-items: center;
+}

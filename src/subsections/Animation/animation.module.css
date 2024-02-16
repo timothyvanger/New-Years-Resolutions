@@ -1,0 +1,20 @@
+#animationSection {
+  border: 2px solid white;
+  padding: 1rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr;
+}
+.hThree {
+  font-size: 1.5rem;
+  color: #e3b23c;
+}
+.topContainer {
+  grid-row: 1;
+  & h2 {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid #e3b23c;
+  }
+}

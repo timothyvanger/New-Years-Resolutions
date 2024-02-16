@@ -1,0 +1,48 @@
+#inputText {
+  display: block;
+  color: #44344f;
+  padding: 0.2em;
+  border-radius: 5rem;
+  outline: none;
+  border: 1px solid white;
+}
+
+#formLabel {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.formContainer {
+  width: 566px;
+  height: 381px;
+  background-color: #44344f;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 1rem;
+}
+.cardContainer {
+  padding: 1rem;
+  flex: 2;
+}
+.progressIndicator {
+  display: flex;
+  gap: 0.5rem;
+}
+.progressIcon {
+  background-color: #2b2131;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  color: transparent;
+}

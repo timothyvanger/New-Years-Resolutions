@@ -22,6 +22,7 @@ a {
 body {
   background: -webkit-linear-gradient(#100a14, #44344f);
   height: 100%;
+  overflow-x: hidden;
 }
 
 .modalContainer {

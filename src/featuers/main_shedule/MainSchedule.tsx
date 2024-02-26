@@ -34,9 +34,8 @@ const MainSchedule = () => {
     {
       weekDay: "Monday",
       weekDayIndex: 1,
-      morningRoutine: "Art Drawing",
-      exerciseSchedule: "Workout",
-      eveningRoutine: "Blender / 3D Art",
+      morningRoutine: "Art / Illustration",
+      eveningRoutine: "Animation",
       date: returnDisplayDate(
         currentData.currentMondayDate + 0,
         currentData.lastDayOfMonth,
@@ -47,8 +46,9 @@ const MainSchedule = () => {
     {
       weekDay: "Tuesday",
       weekDayIndex: 2,
-      morningRoutine: "Content Creation",
-      eveningRoutine: "Art Drawing",
+      morningRoutine: "Web Development",
+      exerciseSchedule: "Workout",
+      eveningRoutine: "Blender",
       date: returnDisplayDate(
         currentData.currentMondayDate + 1,
         currentData.lastDayOfMonth,
@@ -59,9 +59,9 @@ const MainSchedule = () => {
     {
       weekDay: "Wednesday",
       weekDayIndex: 3,
-      morningRoutine: "Web Development",
-      exerciseSchedule: "Workout",
-      eveningRoutine: "Game Development",
+      morningRoutine: "Art Illustration",
+      exerciseSchedule: "Content Creation",
+      eveningRoutine: "Animation",
       date: returnDisplayDate(
         currentData.currentMondayDate + 2,
         currentData.lastDayOfMonth,
@@ -72,8 +72,9 @@ const MainSchedule = () => {
     {
       weekDay: "Thursday",
       weekDayIndex: 4,
-      morningRoutine: "Content Creation",
-      eveningRoutine: "Game Development",
+      morningRoutine: "Web Development",
+      exerciseSchedule: "Workout",
+      eveningRoutine: "Animaiton",
       date: returnDisplayDate(
         currentData.currentMondayDate + 3,
         currentData.lastDayOfMonth,
@@ -85,8 +86,7 @@ const MainSchedule = () => {
       weekDay: "Friday",
       weekDayIndex: 5,
       morningRoutine: "Art Drawing",
-      exerciseSchedule: "Workout",
-      eveningRoutine: "Blender / 3D Art",
+      eveningRoutine: "Blender",
       date: returnDisplayDate(
         currentData.currentMondayDate + 4,
         currentData.lastDayOfMonth,
@@ -97,8 +97,10 @@ const MainSchedule = () => {
     {
       weekDay: "Saturday",
       weekDayIndex: 6,
-      morningRoutine: "Content Creation",
-      eveningRoutine: "Blender / 3D Art",
+      morningRoutine: "Rest Day",
+      exerciseSchedule: "Workout",
+
+      eveningRoutine: "Rest Day",
       date: returnDisplayDate(
         currentData.currentMondayDate + 5,
         currentData.lastDayOfMonth,
@@ -109,8 +111,8 @@ const MainSchedule = () => {
     {
       weekDay: "Sunday",
       weekDayIndex: 0,
-      morningRoutine: "Web Development",
-      eveningRoutine: "Game Development",
+      morningRoutine: "Content",
+      eveningRoutine: "Content",
       date: returnDisplayDate(
         currentData.currentMondayDate + 6,
         currentData.lastDayOfMonth,

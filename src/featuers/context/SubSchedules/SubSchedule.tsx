@@ -3,8 +3,9 @@ import style from "./subSchedule.module.css";
 type SubScheduleProps = {
   task: string;
   weekDay: string;
+  description: string;
 };
-const SubSchedule = ({ task, weekDay }: SubScheduleProps) => {
+const SubSchedule = ({ task, weekDay, description }: SubScheduleProps) => {
   return (
     <>
       <div className={style.dayContainer}>
@@ -16,11 +17,7 @@ const SubSchedule = ({ task, weekDay }: SubScheduleProps) => {
                 <p>
                   <em>{task}</em>
                   <br />
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Voluptates quasi quae, quo nesciunt perferendis omnis esse
-                  accusamus distinctio? Dolore nemo dolorem provident id
-                  exercitationem? Recusandae iste adipisci consectetur dicta
-                  consequatur.
+                  {description}
                 </p>
               </div>
             </div>

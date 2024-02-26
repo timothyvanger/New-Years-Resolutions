@@ -1,100 +1,19 @@
-type ScheduleDataType = {
-  week: [
-    [
-      {
-        weekDay: string;
-        task: string;
-      },
-      {
-        weekDay: string;
+type ScheduleDataType = [
+  { weekDay: string; task: string; description: string },
+  { weekDay: string; task: string; description: string }
+];
 
-        task: string;
-      },
-      {
-        weekDay: string;
-
-        task: string;
-      }
-    ],
-    [
-      {
-        weekDay: string;
-
-        task: string;
-      },
-      {
-        weekDay: string;
-
-        task: string;
-      },
-      {
-        weekDay: string;
-
-        task: string;
-      }
-    ],
-    [
-      {
-        weekDay: string;
-
-        task: string;
-      },
-      {
-        weekDay: string;
-
-        task: string;
-      },
-      {
-        weekDay: string;
-        task: string;
-      }
-    ]
-  ];
-};
-
-export const creatorScheduleData: ScheduleDataType = {
-  week: [
-    [
-      {
-        weekDay: "Tue",
-        task: "Script + StoryBoard",
-      },
-      {
-        weekDay: "Thur",
-        task: "StoryBoard + Rough Draft",
-      },
-      {
-        weekDay: "Sat",
-        task: "Rough Drasft + Final Draft",
-      },
-    ],
-    [
-      {
-        weekDay: "Tue",
-        task: "Final Draft",
-      },
-      {
-        weekDay: "Thur",
-        task: "Final Draft",
-      },
-      {
-        weekDay: "Sat",
-        task: "Final Draft",
-      },
-    ],
-    [
-      {
-        weekDay: "Tue",
-        task: "Finish final draft + audio recording",
-      },
-      {
-        weekDay: "Thur",
-        task: "Audio recording + sound layout + editing",
-      },
-      {
-        weekDay: "Sat",
-        task: "Audio Recording + sound layout + editing",
-      },
-    ],
-  ],
-};
+export const creatorScheduleData: ScheduleDataType = [
+  {
+    weekDay: "Wed",
+    task: "Create rough draft",
+    description:
+      "First come up with an idea to illstrate. Create multiple, if possible, mock ups/rough drafts of the idea. Come to an agreement on one idea and create a fleshed out rough draft /sketch of the final idea",
+  },
+  {
+    weekDay: "Sun",
+    task: "Finish and Render art piece",
+    description:
+      "Take the final rough draft and create a finished illustration from it. Apply post processing and post",
+  },
+];

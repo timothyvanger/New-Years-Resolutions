@@ -1,0 +1,32 @@
+.roadMapButton {
+  min-width: 60px;
+  cursor: pointer;
+}
+.roadMapMonthCard {
+  padding: 1rem;
+  width: 200px;
+  height: 150px;
+  background-color: #44344f;
+  border-radius: 1rem;
+}
+
+.roadMapContainer {
+  position: fixed;
+  z-index: 3000;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr) 100px;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.closeBtn {
+  cursor: pointer;
+  grid-row: 4;
+  height: fit-content;
+}

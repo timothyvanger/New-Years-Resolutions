@@ -22,21 +22,21 @@ const CreatorSection = () => {
     setLocalWeekNumber(num);
   }, []);
 
-  const returnCorrectWeekSchedule = (weekNumber: number) => {
-    if (weekNumber > 3) {
-      weekNumber = 1;
-    }
-    switch (weekNumber) {
-      case 1:
-        return creatorScheduleData.week[0];
-      case 2:
-        return creatorScheduleData.week[1];
-      case 3:
-        return creatorScheduleData.week[2];
-      default:
-        throw new Error("Did not return a valid week");
-    }
-  };
+  // const returnCorrectWeekSchedule = (weekNumber: number) => {
+  //   if (weekNumber > 3) {
+  //     weekNumber = 1;
+  //   }
+  //   switch (weekNumber) {
+  //     case 1:
+  //       return creatorScheduleData.week[0];
+  //     case 2:
+  //       return creatorScheduleData.week[1];
+  //     case 3:
+  //       return creatorScheduleData.week[2];
+  //     default:
+  //       throw new Error("Did not return a valid week");
+  //   }
+  // };
 
   const fetchYoutubeData = async () => {
     console.log("fetching");
@@ -96,11 +96,12 @@ const CreatorSection = () => {
       </div>
       <div className="c-bottom">
         <div className="creatorSchedule">
-          {returnCorrectWeekSchedule(localWeekNumber)?.map((days, index) => {
+          {creatorScheduleData.map((days, index) => {
             return (
               <SubSchedule
                 key={index}
                 task={days.task}
+                description={days.description}
                 weekDay={days.weekDay}
               />
             );
@@ -109,19 +110,9 @@ const CreatorSection = () => {
 
         <div className="c-bottom-text-container">
           <h2>
-            It is hard but you can always start small. Create something and just
-            post it. It is a marathon not a sprint!
+            As for the content, keep it simple. Do not increase the complixity
+            of the content.
           </h2>
-          <ul>
-            <li>Do the best story script you're able to do</li>
-            <li>
-              Storyboard and <span style={{ color: "#e3b23c" }}>ANIMATE!</span>
-            </li>
-            <li>Add Soundeffects, music, voice overs!</li>
-            <li>
-              <span style={{ color: "#e3b23c" }}>POST THE DAMN VIDEO!</span>
-            </li>
-          </ul>
         </div>
       </div>
     </section>

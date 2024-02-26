@@ -1,6 +1,7 @@
 import useModal from "../hooks/useModal";
 import { RoadMapDataID } from "../../data/subScheduleData/Roadmap/roadMapData";
 import RoadMap from "./RoadMap";
+import style from "./roadmap.module.css";
 
 type RoadmapButtonProps = {
   id: RoadMapDataID;
@@ -12,8 +13,8 @@ const RoadmapButton = ({ id }: RoadmapButtonProps) => {
     <>
       {isOpen && createModal()}
       <button
-        className="roadMapButton"
-        onClick={() => openModal(<RoadMap id={id} />)}
+        className={style.roadMapButton}
+        onClick={() => openModal(<RoadMap id={id} closeModal={closeModal} />)}
       >
         Click for Roadmap
       </button>
